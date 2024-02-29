@@ -157,7 +157,8 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list[2] = 37
+    input_list[-1] = 37
 
 
 def backwards(input_list):
@@ -172,7 +173,7 @@ def backwards(input_list):
 
     """
 
-    pass
+    return input_list[::-1]
 
 
 def every_other(input_list):
@@ -185,7 +186,7 @@ def every_other(input_list):
 
     """
 
-    pass
+    return input_list[::2]
 
 
 def delete_third_and_seventh(input_list):
@@ -202,7 +203,8 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    del input_list[2]
+    del input_list[5]
 
 
 ### List Iteration Problems. Built-in methods are allowed for these! ###
