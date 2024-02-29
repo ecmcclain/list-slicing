@@ -218,8 +218,15 @@ def indices_of_positive_numbers(input_list):
     [0, 2, 3, 6]
 
     """
-
-    pass
+    i = 0
+    emty_list = []
+    for item in input_list: 
+        if item >= 0:
+            emty_list.append(i) 
+        i = i+1
+    
+    return emty_list
+    
 
 
 def sum_repeats(input_list):
@@ -235,4 +242,17 @@ def sum_repeats(input_list):
 
     """
 
-    pass
+    """ 
+    set sum is zero 
+    for the current item matches the next item:
+            add it to a sum
+        go to the  next item
+            """
+    
+    sum = 0
+    for i, item in enumerate(input_list):
+        if i != len(input_list)-1:
+            if item == input_list[i + 1]:
+                sum = sum + item
+    return sum
+    
